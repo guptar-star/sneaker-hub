@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Own</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>What I Own</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="own.html">What I Own</a></li>
+            <li><a href="want.html">What I Want</a></li>
+            <li><a href="retro.html">Retro Jordans</a></li>
+            <li><a href="releases.html">Top 2025 Releases</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="page-layout">
+    <aside class="sidebar left">
+        <h3>Filters</h3>
+        <ul>
+            <li><button onclick="filterSneakers('Jordan 1')">Jordan 1</button></li>
+            <li><button onclick="filterSneakers('Jordan 3')">Jordan 3</button></li>
+            <li><button onclick="filterSneakers('Jordan 4')">Jordan 4</button></li>
+            <li><button onclick="filterSneakers('Jordan 11')">Jordan 11</button></li>
+            <li><button onclick="filterSneakers('Kobe')">Kobe</button></li>
+            <li><button onclick="filterSneakers('')">Show All</button></li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <input type="text" id="searchBar" placeholder="Search sneakers..." />
+        <section class="gallery">
+            <h2>My Collection</h2>
+            <div class="sneakers">
+                <!-- Jordan 1 -->
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1 Low Black Toe')">
+                    <img src="images/What I Own/Jordan 1 Low Black Toe.jpg" alt="Jordan 1 Low Black Toe">
+                    <p>Jordan 1 Low Black Toe</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1 High Shattered Backboard')">
+                    <img src="images/What I Own/Jordan 1 Shattered Backboard.jpg" alt="Jordan 1 High Shattered Backboard">
+                    <p>Jordan 1 High Shattered Backboard</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Jordan 3 -->
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3 Black Cement')">
+                    <img src="images/What I Own/Jordan 3 Black Cement.jpg" alt="Jordan 3 Black Cement">
+                    <p>Jordan 3 Black Cement</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3 Palomino')">
+                    <img src="images/What I Own/Jordan 3 Palomino.jpg" alt="Jordan 3 Palomino">
+                    <p>Jordan 3 Palomino</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Jordan 4 -->
+                <div class="sneaker" data-category="Jordan 4" onclick="showInfo('Jordan 4 Bred Reimagined')">
+                    <img src="images/What I Own/Jordan 4 Bred Reimagined.jpg" alt="Jordan 4 Bred Reimagined">
+                    <p>Jordan 4 Bred Reimagined</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 4" onclick="showInfo('Jordan 4 Military Blue')">
+                    <img src="images/What I Own/Jordan 4 Military Blue.jpg" alt="Jordan 4 Military Blue">
+                    <p>Jordan 4 Military Blue</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 4" onclick="showInfo('Jordan 4 White Cement')">
+                    <img src="images/What I Own/Jordan 4 White Cement.jpg" alt="Jordan 4 White Cement">
+                    <p>Jordan 4 White Cement</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Jordan 11 -->
+                <div class="sneaker" data-category="Jordan 11" onclick="showInfo('Jordan 11 Low Bred')">
+                    <img src="images/What I Own/Jordan 11 Low Bred.jpg" alt="Jordan 11 Low Bred">
+                    <p>Jordan 11 Low Bred</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Kobe -->
+                <div class="sneaker" data-category="Kobe" onclick="showInfo('Kobe 8 Lakers')">
+                    <img src="images/What I Own/Kobe 8 Lakers.jpg" alt="Kobe 8 Lakers">
+                    <p>Kobe 8 Lakers</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Kobe" onclick="showInfo('Kobe 8 Navy')">
+                    <img src="images/What I Own/Kobe 8 Navy.jpg" alt="Kobe 8 Navy">
+                    <p>Kobe 8 Navy</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <aside class="sidebar right">
+        <h3>Newest Additions</h3>
+        <ul>
+            <li>Kobe 8 Lakers</li>
+            <li>Jordan 1 High Shattered Backboard</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sneaker Hub</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

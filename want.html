@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Want</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>What I Want</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="own.html">What I Own</a></li>
+            <li><a href="want.html">What I Want</a></li>
+            <li><a href="retro.html">Retro Jordans</a></li>
+            <li><a href="releases.html">Top 2025 Releases</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="page-layout">
+    <aside class="sidebar left">
+        <h3>Filters</h3>
+        <ul>
+            <li><button onclick="filterSneakers('Jordan 1')">Jordan 1</button></li>
+            <li><button onclick="filterSneakers('Jordan 3')">Jordan 3</button></li>
+            <li><button onclick="filterSneakers('Jordan 4')">Jordan 4</button></li>
+            <li><button onclick="filterSneakers('')">Show All</button></li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <input type="text" id="searchBar" placeholder="Search sneakers..." />
+        <section class="gallery">
+            <h2>Wishlist</h2>
+            <div class="sneakers">
+                <!-- Jordan 1 Wishlist -->
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1 Lost and Found')">
+                    <img src="images/What I Want/Jordan 1 Lost and Found.jpg" alt="Jordan 1 Lost and Found">
+                    <p>Jordan 1 Lost and Found</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1 Low Travis Scott Fragment')">
+                    <img src="images/What I Want/Jordan 1 Low Travis Scott Fragment.jpg" alt="Jordan 1 Low Travis Scott Fragment">
+                    <p>Jordan 1 Low Travis Scott Fragment</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1 Off White UNC')">
+                    <img src="images/What I Want/Jordan 1 Off White UNC.jpg" alt="Jordan 1 Off White UNC">
+                    <p>Jordan 1 Off White UNC</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Jordan 3 Wishlist -->
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3 Fire Red')">
+                    <img src="images/What I Want/Jordan 3 Fire Red.jpg" alt="Jordan 3 Fire Red">
+                    <p>Jordan 3 Fire Red</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3 True Blue')">
+                    <img src="images/What I Want/Jordan 3 True Blue.jpg" alt="Jordan 3 True Blue">
+                    <p>Jordan 3 True Blue</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3 White Cement Reimagined')">
+                    <img src="images/What I Want/Jordan 3 White Cement Reimagined.jpg" alt="Jordan 3 White Cement Reimagined">
+                    <p>Jordan 3 White Cement Reimagined</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+
+                <!-- Jordan 4 Wishlist -->
+                <div class="sneaker" data-category="Jordan 4" onclick="showInfo('Jordan 4 Fire Red')">
+                    <img src="images/What I Want/Jordan 4 Fire Red.jpg" alt="Jordan 4 Fire Red">
+                    <p>Jordan 4 Fire Red</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <aside class="sidebar right">
+        <h3>Recently Bought</h3>
+        <ul>
+            <li>Jordan 4 White Cement</li>
+            <li>Jordan 11 Low Bred</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sneaker Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

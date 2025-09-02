@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Jordans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Retro Jordans</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="own.html">What I Own</a></li>
+            <li><a href="want.html">What I Want</a></li>
+            <li><a href="retro.html">Retro Jordans</a></li>
+            <li><a href="releases.html">Top 2025 Releases</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="page-layout">
+    <!-- Left Sidebar (Filters) -->
+    <aside class="sidebar left">
+        <h3>Filters</h3>
+        <ul>
+            <li><button onclick="filterSneakers('Jordan 1')">Jordan 1</button></li>
+            <li><button onclick="filterSneakers('Jordan 2')">Jordan 2</button></li>
+            <li><button onclick="filterSneakers('Jordan 3')">Jordan 3</button></li>
+            <li><button onclick="filterSneakers('Jordan 4')">Jordan 4</button></li>
+            <li><button onclick="filterSneakers('Jordan 5')">Jordan 5</button></li>
+            <li><button onclick="filterSneakers('Jordan 6')">Jordan 6</button></li>
+            <li><button onclick="filterSneakers('Jordan 7')">Jordan 7</button></li>
+            <li><button onclick="filterSneakers('Jordan 8')">Jordan 8</button></li>
+            <li><button onclick="filterSneakers('Jordan 9')">Jordan 9</button></li>
+            <li><button onclick="filterSneakers('Jordan 10')">Jordan 10</button></li>
+            <li><button onclick="filterSneakers('Jordan 11')">Jordan 11</button></li>
+            <li><button onclick="filterSneakers('Jordan 12')">Jordan 12</button></li>
+            <li><button onclick="filterSneakers('Jordan 13')">Jordan 13</button></li>
+            <li><button onclick="filterSneakers('Jordan 14')">Jordan 14</button></li>
+            <li><button onclick="filterSneakers('')">Show All</button></li>
+        </ul>
+    </aside>
+
+    <!-- Center Content -->
+    <section class="content">
+        <input type="text" id="searchBar" placeholder="Search sneakers..." />
+        <section class="gallery">
+            <h2>Retro Jordans Collection</h2>
+            <div class="sneakers">
+                <!-- Jordan 1–14 -->
+                <div class="sneaker" data-category="Jordan 1" onclick="showInfo('Jordan 1')">
+                    <img src="images/Retro Jordans/Jordan 1.jpg" alt="Jordan 1">
+                    <p>Jordan 1</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 2" onclick="showInfo('Jordan 2')">
+                    <img src="images/Retro Jordans/Jordan 2.jpg" alt="Jordan 2">
+                    <p>Jordan 2</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 3" onclick="showInfo('Jordan 3')">
+                    <img src="images/Retro Jordans/Jordan 3.jpg" alt="Jordan 3">
+                    <p>Jordan 3</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 4" onclick="showInfo('Jordan 4')">
+                    <img src="images/Retro Jordans/Jordan 4.jpg" alt="Jordan 4">
+                    <p>Jordan 4</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 5" onclick="showInfo('Jordan 5')">
+                    <img src="images/Retro Jordans/Jordan 5.jpg" alt="Jordan 5">
+                    <p>Jordan 5</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 6" onclick="showInfo('Jordan 6')">
+                    <img src="images/Retro Jordans/Jordan 6.jpg" alt="Jordan 6">
+                    <p>Jordan 6</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 7" onclick="showInfo('Jordan 7')">
+                    <img src="images/Retro Jordans/Jordan 7.jpg" alt="Jordan 7">
+                    <p>Jordan 7</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 8" onclick="showInfo('Jordan 8')">
+                    <img src="images/Retro Jordans/Jordan 8.jpg" alt="Jordan 8">
+                    <p>Jordan 8</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 9" onclick="showInfo('Jordan 9')">
+                    <img src="images/Retro Jordans/Jordan 9.jpg" alt="Jordan 9">
+                    <p>Jordan 9</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 10" onclick="showInfo('Jordan 10')">
+                    <img src="images/Retro Jordans/Jordan 10.jpg" alt="Jordan 10">
+                    <p>Jordan 10</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 11" onclick="showInfo('Jordan 11')">
+                    <img src="images/Retro Jordans/Jordan 11.jpg" alt="Jordan 11">
+                    <p>Jordan 11</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 12" onclick="showInfo('Jordan 12')">
+                    <img src="images/Retro Jordans/Jordan 12.jpg" alt="Jordan 12">
+                    <p>Jordan 12</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 13" onclick="showInfo('Jordan 13')">
+                    <img src="images/Retro Jordans/Jordan 13.jpg" alt="Jordan 13">
+                    <p>Jordan 13</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+                <div class="sneaker" data-category="Jordan 14" onclick="showInfo('Jordan 14')">
+                    <img src="images/Retro Jordans/Jordan 14.jpg" alt="Jordan 14">
+                    <p>Jordan 14</p>
+                    <button class="fav-btn">🤍</button>
+                    <label><input type="checkbox" class="compare-checkbox"> Compare</label>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Right Sidebar (Upcoming Releases) -->
+    <aside class="sidebar right">
+        <h3>Newest Releases</h3>
+        <ul>
+            <li>Jordan 40</li>
+            <li>Jordan 39</li>
+            <li>Jordan 38</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sneaker Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
